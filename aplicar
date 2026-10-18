@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+base_dir="$(cd -- "$(dirname -- "$(readlink -f -- "$0")")" && pwd)"
+exec /usr/bin/python3 "$base_dir/apply.py" "$@"

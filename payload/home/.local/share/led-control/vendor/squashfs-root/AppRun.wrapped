@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Get the absolute path to the AppDir
+HERE="$(cd "$(dirname "$(readlink -f "${0}")")" && pwd)"
+
+# Set LD_LIBRARY_PATH so plugins can find bundled Qt libraries
+export LD_LIBRARY_PATH="${HERE}/usr/lib"
+
+# Execute the main binary
+exec "${HERE}/usr/bin/OpenRGB" "$@"

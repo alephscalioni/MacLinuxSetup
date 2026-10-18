@@ -1,0 +1,6 @@
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0b05", ATTRS{idProduct}=="1939", TAG+="uaccess"
+SUBSYSTEM=="usb", ATTR{idVendor}=="0b05", ATTR{idProduct}=="1939", TAG+="uaccess"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="16d2", ATTRS{idProduct}=="1f01", TAG+="uaccess"
+SUBSYSTEM=="usb", ATTR{idVendor}=="16d2", ATTR{idProduct}=="1f01", TAG+="uaccess"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="c539", TAG+="uaccess"
+SUBSYSTEM=="usb", ATTR{idVendor}=="046d", ATTR{idProduct}=="c539", TAG+="uaccess"

@@ -1,0 +1,8 @@
+{
+  "tests": "5 passed: isolated apply/rollback, Chrome flag restoration, configured Chrome not restarted, widget values, path scope",
+  "live_apply": "completed on Fedora 44 KDE",
+  "backup": "~/.local/state/maclinux-aplicador/backups/20261018-124435-583058",
+  "chrome": "native system frame false confirmed; screenshot inspected, macOS titlebar visible",
+  "desktop": "Aurorae active; border metrics and macOS buttons preserved",
+  "publication": "private snapshot; no Chrome profile, GitHub credentials or browser session files"
+}

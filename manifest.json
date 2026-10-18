@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "created_at": "2026-10-18T12:39:31.613032-03:00",
+  "source_home": "/home/aleph",
+  "platform": "Fedora 44 / KDE Plasma / x86_64",
+  "kwin": {
+    "Round-Corners": {
+      "ActiveOuterOutlineThickness": "0",
+      "ActiveOutlineAlpha": "0",
+      "ActiveOutlineThickness": "0",
+      "ActiveOutlineUseCustom": "true",
+      "ActiveOutlineUsePalette": "false",
+      "ActiveSecondOutlineThickness": "0",
+      "DisableOutlineMaximize": "false",
+      "DisableRoundFullScreen": "true",
+      "DisableRoundMaximize": "false",
+      "DisableRoundTile": "false",
+      "InactiveCornerRadius": "18",
+      "InactiveOuterOutlineThickness": "0",
+      "InactiveOutlineAlpha": "0",
+      "InactiveOutlineColor": "255,255,255",
+      "InactiveOutlineThickness": "0",
+      "InactiveOutlineUseCustom": "true",
+      "InactiveOutlineUsePalette": "false",
+      "InactiveSecondOutlineThickness": "0",
+      "IncludeDialogs": "true",
+      "IncludeNormalWindows": "true",
+      "OutlineColor": "255,255,255",
+      "OutlineThickness": "0",
+      "Size": "18"
+    },
+    "org.kde.kdecoration2": {
+      "BorderSize": "None",
+      "BorderSizeAuto": "false",
+      "ButtonsOnLeft": "XIA",
+      "ButtonsOnRight": "",
+      "library": "org.kde.kwin.aurorae",
+      "theme": "__aurorae__svg__XMacTahoe-Night"
+    },
+    "Plugins": {
+      "kwin4_effect_shapecornersEnabled": "true"
+    }
+  },
+  "plasma": {
+    "customCardColor": "#ffffff",
+    "customControlCommand": [
+      "/home/aleph/.local/bin/xmactahoe glass toggle",
+      "/home/aleph/.local/bin/xmactahoe auto toggle",
+      "/home/aleph/.local/bin/xmactahoe motion toggle"
+    ],
+    "customControlEnabledButton": [
+      "true",
+      "true",
+      "true"
+    ],
+    "customControlEnabledIcons": [
+      "true",
+      "true",
+      "true"
+    ],
+    "customControlHeights": [
+      "1",
+      "1",
+      "1"
+    ],
+    "customControlIcons": [
+      "view-preview",
+      "weather-clear",
+      "media-playback-pause"
+    ],
+    "customControlIdSensor": [
+      "",
+      "",
+      ""
+    ],
+    "customControlIsPercentage": [
+      "false",
+      "false",
+      "false"
+    ],
+    "customControlNames": [
+      "Vidro",
+      "Automático",
+      "Movimento"
+    ],
+    "customControlSubTitle": [
+      "",
+      "",
+      ""
+    ],
+    "customControlWidths": [
+      "1",
+      "1",
+      "1"
+    ],
+    "darkTheme": "XMacTahoe.Dark",
+    "elements": [
+      "16",
+      "11",
+      "13",
+      "14",
+      "6",
+      "7",
+      "2",
+      "8"
+    ],
+    "enabledCustomColor": false,
+    "gridHeight": 6,
+    "gridWidth": 4,
+    "labelsToggles": true,
+    "lightTheme": "XMacTahoe.Light",
+    "listControlsX": [
+      "1",
+      "2",
+      "3"
+    ],
+    "listControlsY": [
+      "5",
+      "5",
+      "5"
+    ],
+    "listCustomControls": [
+      "Vidro",
+      "Automático",
+      "Movimento"
+    ],
+    "opacityCardCustom": 12,
+    "radiusCardCustom": 16,
+    "selected_theme": "custom",
+    "shadowOpacity": 0,
+    "sizeGeneralIcons": 22,
+    "sizeMarginlIcons": 12,
+    "usePlasmaColor": false,
+    "usePlasmaDesing": false,
+    "xElements": [
+      "0",
+      "2",
+      "2",
+      "3",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "yElements": [
+      "0",
+      "0",
+      "1",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  "chrome": {
+    "browser.custom_chrome_frame": false
+  },
+  "led_autostart": true,
+  "requirements": [
+    "XMacTahoe base installed",
+    "KDE Plasma",
+    "Qt 6 Widgets/Network runtime",
+    "kdialog",
+    "qdbus",
+    "kwriteconfig6"
+  ],
+  "notes": "Private local snapshot. OpenRGB device configuration and local font copies are included. Not for public redistribution."
+}
