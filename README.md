@@ -32,11 +32,10 @@ Requer Fedora 44 x86_64, KDE Plasma, base XMacTahoe instalada e as bibliotecas Q
 ```sh
 gh repo clone alephscalioni/MacLinuxSetup "$HOME/Projetos/desktop-macos-aplicador"
 cd "$HOME/Projetos/desktop-macos-aplicador"
-/usr/bin/python3 install-launcher.py
 ./aplicar
 ```
 
-O repositório é privado: o GitHub CLI precisa estar autenticado. As duas últimas etapas instalam o atalho/comando e executam a aplicação. Se as regras de acesso aos LEDs estiverem ausentes, o sistema solicita autenticação de administrador por `pkexec`. No computador já configurado, não é necessário instalá-las novamente.
+O repositório é privado: o GitHub CLI precisa estar autenticado. O comando `./aplicar` executa a aplicação e instala o atalho/comando automaticamente. `install-launcher.py` também pode instalar apenas o atalho, sem aplicar os ajustes. Se as regras de acesso aos LEDs estiverem ausentes, o sistema solicita autenticação de administrador por `pkexec`. No computador já configurado, não é necessário instalá-las novamente.
 
 ## Conferir sem alterar
 

@@ -253,7 +253,7 @@ def apply(base, home, live=True):
             raise RuntimeError('Este snapshot requer KDE Plasma em Linux x86_64.')
         if 'VERSION_ID=44' not in Path('/etc/os-release').read_text().replace('"', ''):
             raise RuntimeError('Este snapshot foi preparado para Fedora 44. Confira os requisitos antes de adaptar.')
-    for executable in ['kwriteconfig6'] + (['qdbus', 'systemctl', 'fc-cache'] if live else []):
+    for executable in ['kwriteconfig6'] + (['qdbus', 'systemctl', 'fc-cache', 'xmactahoe'] if live else []):
         if not shutil.which(executable):
             raise RuntimeError('Dependência ausente: ' + executable)
     backup = Backup(home)
@@ -329,6 +329,8 @@ def main():
         restore(path, home, live)
     else:
         backup = apply(BASE, home, live)
+        if live and (BASE / 'install-launcher.py').is_file():
+            run(['/usr/bin/python3', BASE / 'install-launcher.py'])
         print('Concluído. Para desfazer: maclinux-aplicar --restore ' + str(backup), flush=True)
     if live and shutil.which('notify-send'):
         run(['notify-send', 'MacLinux Setup', 'Ajustes aplicados. Backup salvo para desfazer.'], check=False)
